@@ -1,31 +1,54 @@
-# Windows Calculator
+# ماشین حساب ویندوز | Windows Calculator
 
-A modern dark-themed desktop calculator built with C# and WPF for Windows 10/11.
+یک ماشین حساب دسکتاپ با طراحی تیره و مدرن، ساخته‌شده با C# و WPF برای ویندوز ۱۰ و ۱۱.
 
-## Features
+A modern dark-themed desktop calculator built with C# and WPF for Windows 10 and Windows 11.
+
+## امکانات | Features
+
+- جمع، تفریق، ضرب و تقسیم
+- محاسبه درصد
+- تغییر علامت مثبت و منفی
+- جذر و توان دوم
+- تاریخچه محاسبات
+- پشتیبانی از صفحه‌کلید
+- رابط کاربری واکنش‌گرا
 
 - Addition, subtraction, multiplication, and division
-- Percentage, sign toggle, square root, and square
+- Percentage and sign toggle
+- Square root and square
 - Calculation history
 - Keyboard input
 - Responsive WPF layout
 
-## Requirements
+## پیش‌نیازها | Requirements
+
+- ویندوز ۱۰ یا ۱۱
+- .NET 8 SDK برای توسعه
 
 - Windows 10 or Windows 11
-- .NET 8 SDK
+- .NET 8 SDK for development
 
-## Run
-
-```powershell
-dotnet restore
-dotnet run --project .\WindowsCalculator\WindowsCalculator.csproj
-```
-
-## Publish a standalone Windows build
+## اجرای برنامه | Run
 
 ```powershell
-dotnet publish .\WindowsCalculator\WindowsCalculator.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+dotnet restore .\WindowsCalculator\WindowsCalculator\WindowsCalculator.csproj
+dotnet run --project .\WindowsCalculator\WindowsCalculator\WindowsCalculator.csproj
 ```
 
-The published files are placed under `WindowsCalculator\bin\Release\net8.0-windows\win-x64\publish`.
+## ساخت نسخه مستقل | Publish
+
+```powershell
+dotnet publish .\WindowsCalculator\WindowsCalculator\WindowsCalculator.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
+
+## دانلود | Download
+
+[دریافت نسخه‌های برنامه از GitHub Releases](https://github.com/benisolid/WindowsCalculator/releases)
+
+## فناوری‌ها | Technologies
+
+- C#
+- .NET 8
+- WPF
+- XAML
